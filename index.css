@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+  margin: 2rem;
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+  caret-color: #5ded04;
+  border: px solid #757575;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+textarea:focus {
+  outline: none;
+  border: 1px solid #ffd700;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+.timer {
+  color: #ffd700;
+}
+.timer-container {
+  width: 2rem;
+  height: 2rem;
+  background-color: #282828;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.reference-text {
+  color: #e0e0e0;
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.highlighttext {
+  color: #00ff40;
+}
+.todo {
+  color: #4caf50;
+}
+.mode-holder {
+  width: 10rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(5px);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+button {
+  width: 10rem;
+  height: 2rem;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+}
+.seperator {
+  width: 0.1rem;
+  height: 2rem;
+  background-color: white;
+}
+
+.btntolight {
+  background-color: #0000ff;
+  border-bottom-right-radius: 1.5rem;
+}
+.btntodark {
+  background-color: #0000ff;
+  border-bottom-left-radius: 1.5rem;
+}
+.backgroundforlight {
+  background-color: #f8f8f8;
+}
+.textforlight {
+  color: #222222;
+}
+.typebackground {
+  background-color: #ffffff;
+  color: black;
+}
+.inactivebtnforlight {
+  border-bottom-right-radius: 1.5rem;
+  background-color: #666666;
+}
+.inactivebtnfordark {
+  border-bottom-left-radius: 1.5rem;
+  background-color: #a0a0a0;
+}
+.timerforlight {
+  background-color: #dcdcdc;
+}
+.timertext {
+  color: #000000;
+}
