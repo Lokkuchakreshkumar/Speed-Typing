@@ -34,13 +34,13 @@ function animate() {
         }
       }
     } else if (tocompare == textinspan) {
-      spans[i].style.backgroundColor = "#4CAF50";
+      spans[i].style.backgroundColor = "#2ECC71";
       console.log(correct);
       correct++;
       i++;
       k++;
     } else if (tocompare != textinspan) {
-      spans[i].style.backgroundColor = "#D32F2F";
+      spans[i].style.backgroundColor = "#FF6B6B";
       i++;
       k++;
     }
@@ -53,7 +53,7 @@ function counter() {
   let h2 = document.querySelector(".timer");
   h2.innerText = count;
   count++;
-  if (count <= 10) {
+  if (count <= 60) {
     setTimeout(counter, 1000);
   }
 }
@@ -76,11 +76,11 @@ function some() {
     let acc = accuracy();
     let h3 = document.querySelector("h3");
     h3.innerText = `Accuracy : ${acc}`;
-    h3.style.color = "#8466dd";
-  }, 10000);
+    h3.style.color = "#42A5F5";
+  }, 60000);
 }
 function accuracy() {
-  let acc = (correct / utext.value.length) * 100;
+  let acc = (correct / i) * 100;
   return Math.floor(acc);
 }
 let darkbtn = document.querySelector(".darkbtn");
