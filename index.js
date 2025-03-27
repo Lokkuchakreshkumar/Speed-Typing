@@ -181,11 +181,6 @@ function lightmode(light) {
     }
   });
 }
-if (!localStorage.getItem("light")) {
-  document.addEventListener("DOMContentLoaded", () => {
-    localStorage.setItem("light", "0");
-  });
-}
 if (forthing == 0 || forthing == 1) {
   if (forthing == 0) {
     body.classList.remove("backgroundforlight");
