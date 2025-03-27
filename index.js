@@ -30,7 +30,7 @@ function genrandom() {
 }
 let darkbtn = document.querySelector(".darkbtn");
 let lightbtn = document.querySelector(".light");
-let forthing = localStorage.getItem("light");
+let forthing = parseInt(localStorage.getItem("light"));
 
 let rtext = document.querySelector(".reference-text");
 randomparanumber = genrandom();
@@ -207,5 +207,5 @@ if (forthing) {
     light = 1;
     localStorage.setItem("light", "1");
   }
-  lightmode(parseInt(forthing));
+  lightmode((forthing));
 }
