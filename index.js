@@ -186,8 +186,8 @@ if (!localStorage.getItem("light")) {
     localStorage.setItem("light", "0");
   });
 }
-if (forthing) {
-  if (forthing == 0 || forthing == 1) {
+if (forthing == 0 || forthing == 1) {
+  if (forthing == 0) {
     body.classList.remove("backgroundforlight");
     rtext.classList.remove("textforlight");
     utext.classList.remove("typebackground");
